@@ -1,6 +1,6 @@
 # Deliverable 2: System Architecture Brief
 
-**Project:** Streaming Live RAG (PRISM)
+**Project:** Streaming Live RAG (SL-RAG)
 **Date:** September 2026
 
 ---

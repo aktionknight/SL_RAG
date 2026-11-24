@@ -1,6 +1,6 @@
 ﻿# Deliverable 3: Benchmarking & Evaluation Report
 
-**Project:** Streaming Live RAG (PRISM)
+**Project:** Streaming Live RAG (SL-RAG)
 **Date:** October 2026
 
 ## Measurement status

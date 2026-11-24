@@ -479,7 +479,7 @@ export default function App() {
       <header className="header">
         <div className="header-left">
           <div>
-            <div className="logo">PRISM</div>
+            <div className="logo">SL-RAG</div>
             <div className="logo-sub">Streaming Live RAG Engine</div>
           </div>
         </div>

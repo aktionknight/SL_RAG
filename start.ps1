@@ -1,5 +1,5 @@
 # start.ps1
-Write-Host "Starting PRISM_RAG Docker Stack (Engine + Observability + Ollama)..."
+Write-Host "Starting SL_RAG Docker Stack (Engine + Observability + Ollama)..."
 docker compose up -d
 
 Write-Host "Waiting for Ollama to initialize..."

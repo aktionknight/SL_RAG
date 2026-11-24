@@ -1,7 +1,7 @@
 <img width="1917" height="912" alt="image" src="https://github.com/user-attachments/assets/9195d22c-7e85-467d-a7ca-29ca39d2d108" />
-# PRISM RAG: Streaming Live RAG System
+# SL-RAG: Streaming Live RAG System
 
-PRISM RAG (Streaming Live RAG) is a Retrieval-Augmented Generation engine designed for streaming queries, bounded LLM use, and verifiable provenance. Measured performance status is documented in the evaluation report.
+SL-RAG (Streaming Live RAG) is a Retrieval-Augmented Generation engine designed for streaming queries, bounded LLM use, and verifiable provenance. Measured performance status is documented in the evaluation report.
 
 It treats incoming utterances as continuous event streams, allowing it to begin retrieval while the user is still speaking.
 
@@ -25,7 +25,7 @@ Run the project with : .\start.ps1 (from project root) or follow steps in the RE
 
 ## System Architecture
 
-The PRISM system bypasses traditional vector database infrastructure to remain strictly bounded and parsimonious (HC-5 constraint).
+The SL-RAG system bypasses traditional vector database infrastructure to remain strictly bounded and parsimonious (HC-5 constraint).
 
 - **Sparse Index:** `bm25s`
 - **Dense Index:** `FAISS` (Exact Search / `IndexFlatIP`) with `bge-small-en-v1.5`
@@ -47,8 +47,8 @@ For more in-depth architectural details and design decisions, please review:
 
 ```bash
 # Clone the repository
-git clone <repo-url>
-cd PRISM_RAG
+git clone https://github.com/aktionknight/SL_RAG.git
+cd SL_RAG
 
 # Create a virtual environment and install dependencies
 uv venv
@@ -121,7 +121,7 @@ npm run dev
 ```
 
 ### Observability
-PRISM emits structured telemetry for controller decisions, retrieval and graph changes to `events.jsonl`. Full trace coverage has not been established by a larger streaming evaluation.
+SL-RAG emits structured telemetry for controller decisions, retrieval and graph changes to `events.jsonl`. Full trace coverage has not been established by a larger streaming evaluation.
 For a visual dashboard, the OpenTelemetry + Prometheus + Grafana stack is now bundled and starts automatically when using `.\start.ps1` or `docker compose up -d`.
 
 ## Documentation
